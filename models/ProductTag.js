@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+// junction table
 ProductTag.init(
   {
     // define columns
@@ -28,7 +29,7 @@ ProductTag.init(
       }
     }
   },
-  
+
   {
     sequelize,
     timestamps: false,
